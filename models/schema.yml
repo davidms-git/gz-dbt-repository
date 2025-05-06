@@ -7,6 +7,7 @@ sources:
     tables:
       - name: sales
         identifier: raw_gz_sales
+        description: sales of Greenweez / we have on row per product_id found in each orders_id
         columns:
           - name: date_date
           - name: orders_id
@@ -15,6 +16,7 @@ sources:
           - name: quantity
       - name: product
         identifier: raw_gz_product
+        description: list of products by product id with purchase price
         columns:
           - name: products_id
             description: "pk"
@@ -24,6 +26,7 @@ sources:
           - name: purchSE_PRICE
       - name: ship
         identifier: raw_gz_ship
+        description: order id with shipping fee, logistic cost and shipping cost
         columns:
           - name: orders_id
             description: "pk"
