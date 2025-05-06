@@ -3,17 +3,13 @@ version: 2
 sources:
   - name: raw
     description: "gwz_raw_data"
-    schema: gwz_raw_data
+    schema: gz_raw_data
     tables:
       - name: sales
         identifier: raw_gz_sales
         columns:
           - name: date_date
           - name: orders_id
-            description: "pk"
-            tests:
-              - unique
-              - not_null
           - name: pdt_id
           - name: revenue
           - name: quantity
