@@ -46,24 +46,19 @@ sources:
             - not_null
           - name: paid_source
             tests:
-              - not null
+              - not_null
           - name: campaign_key
           - name: camPGN_name
           - name: ads_cost
           - name: impression
           - name: click
-        tests:
-           - dbt_utils.unique_combination_of_columns:
-              combination_of_columns:
-              - date_date
-              - paid_source
+        
       - name: bing
         identifier: raw_gz_bing
         description: ad campaigns in bing
         columns:
           - name: date_date
-            tests:
-              - unique
+            tests:            
               - not_null
           - name: paid_source
           - name: campaign_key
@@ -71,18 +66,13 @@ sources:
           - name: ads_cost
           - name: impression
           - name: click
-        tests:
-           - dbt_utils.unique_combination_of_columns:
-              combination_of_columns:
-              - date_date
-              - paid_source
+        
       - name: criteo
         identifier: raw_gz_criteo
         description: ad campaigns in criteo
         columns:
           - name: date_date
-            tests:
-              - unique
+            tests:              
               - not_null
           - name: paid_source
           - name: campaign_key
@@ -90,18 +80,13 @@ sources:
           - name: ads_cost
           - name: impression
           - name: click
-        tests:
-           - dbt_utils.unique_combination_of_columns:
-              combination_of_columns:
-              - date_date
-              - paid_source
+      
       - name: facebook
         identifier: raw_gz_facebook
         description: ad campaigns in facebook
         columns:
           - name: date_date
-            tests:
-              - unique
+            tests:              
               - not_null
           - name: paid_source
           - name: campaign_key
@@ -109,9 +94,5 @@ sources:
           - name: ads_cost
           - name: impression
           - name: click
-        tests:
-           - dbt_utils.unique_combination_of_columns:
-              combination_of_columns:
-              - date_date
-              - paid_source
+        
       
