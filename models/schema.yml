@@ -42,6 +42,9 @@ sources:
         description: ad campaign in adworks
         columns:
           - name: date_date
+            tests:
+              - unique
+              - not_null
           - name: paid_source
           - name: campaign_key
           - name: camPGN_name
@@ -53,6 +56,9 @@ sources:
         description: ad campaigns in bing
         columns:
           - name: date_date
+            tests:
+              - unique
+              - not_null
           - name: paid_source
           - name: campaign_key
           - name: camPGN_name
@@ -64,6 +70,9 @@ sources:
         description: ad campaigns in criteo
         columns:
           - name: date_date
+            tests:
+              - unique
+              - not_null
           - name: paid_source
           - name: campaign_key
           - name: camPGN_name
@@ -75,6 +84,9 @@ sources:
         description: ad campaigns in facebook
         columns:
           - name: date_date
+            tests:
+              - unique
+              - not_null
           - name: paid_source
           - name: campaign_key
           - name: camPGN_name
