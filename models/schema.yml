@@ -37,3 +37,48 @@ sources:
           - name: shipping_fee_1
           - name: logCost
           - name: ship_cost
+      - name: adworks
+        identifier: raw_gz_adwords
+        description: ad campaign in adworks
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+      - name: bing
+        identifier: raw_gz_bing
+        description: ad campaigns in bing
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: ad campaigns in criteo
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: ad campaigns in facebook
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+      
